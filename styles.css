@@ -3,6 +3,7 @@
 :root {
     --primary-color: #7e22ce;
     --dark-gray: #6b7280;
+    --off-white: #f1f5f9;
 }
 
 body {
@@ -79,7 +80,8 @@ hr {
 
 /* header */
 .hero {
-    padding: 2rem;
+    padding: 2rem 0rem;
+    text-align: center;
 }
 
 .hero .hero-img {
@@ -88,12 +90,24 @@ hr {
     margin: auto;
 }
 
-.hero .hero-heading {
-    text-align: center;
+.hero .hero-heading {    
     padding-top: 1rem;
     color: var(--dark-gray);
 }
 
 .hero .hero-heading .heading-inverted {
     color: var(--primary-color);
+}
+
+/* sections */
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--off-white);
 }
