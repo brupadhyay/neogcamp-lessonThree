@@ -74,6 +74,7 @@ hr {
 
 .navigation .nav-pills {
     text-align: right;
+    padding-inline-start: 0px;
 }
 
 .navigation .link-active {
@@ -118,8 +119,8 @@ hr {
     background-color: var(--off-white);
 }
 
-.project-paragraph, .blog-paragraph {
-    padding-bottom: 1rem;
+.project-paragraph, .blog-paragraph, .home-section {
+    padding-bottom: 0.5rem;
 }
 
 /*footer*/
@@ -169,5 +170,26 @@ hr {
 }
 
 .project-div .project-primary {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+}
+
+/*media query for mobile devices*/
+@media screen and (max-width: 400px){
+    .navigation li {
+        padding: 0rem;
+    }
+
+    /*links*/
+    .project-div a {
+        display: block;
+    }
+
+    .project-div .project-primary {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-div a {
+        text-align: center;
+    }
 }
