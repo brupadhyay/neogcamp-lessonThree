@@ -189,7 +189,13 @@ hr {
         margin-bottom: 1rem;
     }
 
-    .project-div a {
+    /*fixing padding from user agent stylesheet*/
+    .list-non-bullet {
+        padding-inline-start: 0px;
+    }
+
+    /*user experience feedback done*/
+    .container-center {
         text-align: center;
     }
 }
